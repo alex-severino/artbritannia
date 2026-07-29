@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Art Britannia Ltd</title>
 <meta name="description" content="Art Britannia Ltd — an art creation company. Registry of studios and ventures." />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/jpeg" href="/favicon_source.jpg" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -58,6 +58,22 @@
     letter-spacing:-0.01em;
     margin:0;
     line-height:1.02;
+  }
+  .sr-only{
+    position:absolute;
+    width:1px; height:1px;
+    padding:0; margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border:0;
+  }
+  .logo{
+    display:block;
+    max-width:220px;
+    width:100%;
+    height:auto;
+    margin:0 auto;
   }
   .tagline{
     font-family:'Fraunces', serif;
@@ -170,7 +186,8 @@
   <div class="wrap">
     <header>
       <p class="eyebrow">Art Britannia Ltd · Company No. 16631916</p>
-      <h1>Art&nbsp;Britannia</h1>
+      <img src="/logo.jpg" alt="Art Britannia" class="logo" />
+      <h1 class="sr-only">Art Britannia</h1>
       <p class="tagline">An art creation company — the studio group behind independent ventures in design, sound, and visual art.</p>
     </header>
 
@@ -206,7 +223,7 @@
     <footer>
       <div class="row">
         <span>12 Mulberry Place, Pinnell Road, London, SE9 6AR</span>
-        <a href="mailto:hello@artbritannia.com">hello@artbritannia.com</a>
+        <span>hello@artbritannia.com</span>
       </div>
     </footer>
   </div>
