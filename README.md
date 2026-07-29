@@ -4,7 +4,9 @@ Single static page for artbritannia.com. No build step, no framework — plain H
 
 ## Structure
 - `index.html` — the page
-- `favicon.svg` — AB monogram favicon
+- `logo.jpg` — Britannia mark (favicon source)
+- `favicon.ico`, `apple-touch-icon.png`, `icons/` — favicons (from `logo.jpg`)
+- `site.webmanifest`, `browserconfig.xml` — PWA / Windows tile metadata
 
 ## Local preview
 Open `index.html` directly in a browser, or serve it:
