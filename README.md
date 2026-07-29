@@ -4,8 +4,9 @@ Single static page for artbritannia.com. No build step, no framework — plain H
 
 ## Structure
 - `index.html` — the page
-- `logo.jpg` — Britannia mark (favicon source)
-- `favicon.ico`, `apple-touch-icon.png`, `icons/` — favicons (from `logo.jpg`)
+- `logo.jpg` — Britannia mark
+- `favicon.svg` — minimal black trident crown
+- `favicon.ico`, `apple-touch-icon.png`, `icons/` — raster favicons (from `favicon.svg`)
 - `site.webmanifest`, `browserconfig.xml` — PWA / Windows tile metadata
 
 ## Local preview
