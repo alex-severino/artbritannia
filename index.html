@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Art Britannia Ltd</title>
+<meta name="description" content="Art Britannia Ltd — an art creation company. Registry of studios and ventures." />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;1,9..144,400&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0B0D10;
+    --paper:#F6F3EC;
+    --brass:#B08D46;
+    --brass-dim:#7A6534;
+    --line: rgba(246,243,236,0.14);
+    --muted: rgba(246,243,236,0.55);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--ink);
+    color:var(--paper);
+    font-family:'Inter', sans-serif;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{
+    width:100%;
+    max-width:640px;
+    padding:0 28px;
+    margin:0 auto;
+    flex:1;
+    display:flex;
+    flex-direction:column;
+  }
+  header{
+    padding-top:72px;
+    text-align:center;
+  }
+  .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:var(--brass);
+    margin:0 0 22px;
+  }
+  h1{
+    font-family:'Fraunces', serif;
+    font-weight:300;
+    font-size:clamp(40px, 8vw, 62px);
+    letter-spacing:-0.01em;
+    margin:0;
+    line-height:1.02;
+  }
+  .tagline{
+    font-family:'Fraunces', serif;
+    font-style:italic;
+    font-weight:400;
+    font-size:17px;
+    color:var(--muted);
+    max-width:420px;
+    margin:22px auto 0;
+    line-height:1.55;
+  }
+  .divider{
+    height:1px;
+    background:var(--line);
+    margin:56px 0 0;
+  }
+  .register{
+    margin:0;
+    padding:0;
+    list-style:none;
+  }
+  .register li{
+    border-bottom:1px solid var(--line);
+  }
+  .register a, .register .soon{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    gap:16px;
+    padding:22px 2px;
+    text-decoration:none;
+    color:inherit;
+  }
+  .register a{ cursor:pointer; }
+  .entry-left{
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+    min-width:0;
+  }
+  .entry-num{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    color:var(--muted);
+    flex-shrink:0;
+  }
+  .entry-name{
+    font-family:'Fraunces', serif;
+    font-size:19px;
+    font-weight:500;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .entry-status{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:10.5px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--muted);
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    white-space:nowrap;
+  }
+  .dot{
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    display:inline-block;
+  }
+  .dot.live{ background:var(--brass); }
+  .dot.soon{ background:transparent; border:1px solid var(--muted); }
+  .register a .entry-status{ transition: color .18s ease; }
+  .register a:hover .entry-status{ color:var(--brass); }
+  .register a:hover .entry-name{ color:var(--brass); }
+  .register li:last-child{ border-bottom:1px solid var(--line); }
+  .soon{ opacity:0.55; }
+  .soon .entry-name{ color:var(--muted); }
+
+  footer{
+    margin-top:auto;
+    padding:56px 2px 40px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:11px;
+    line-height:1.9;
+    color:var(--muted);
+  }
+  footer .row{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:8px 24px;
+    border-top:1px solid var(--line);
+    padding-top:18px;
+  }
+  footer a{ color:var(--paper); text-decoration:none; border-bottom:1px solid var(--line); }
+  footer a:hover{ color:var(--brass); border-color:var(--brass); }
+
+  @media (max-width:480px){
+    header{ padding-top:52px; }
+    .entry-name{ font-size:17px; }
+    .register a, .register .soon{ padding:18px 2px; }
+    footer .row{ flex-direction:column; gap:6px; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="eyebrow">Art Britannia Ltd · Company No. 16631916</p>
+      <h1>Art&nbsp;Britannia</h1>
+      <p class="tagline">An art creation company — the studio group behind independent ventures in design, sound, and visual art.</p>
+    </header>
+
+    <div class="divider"></div>
+
+    <ul class="register">
+      <li><a href="https://angelinaseverino.com" target="_blank" rel="noopener">
+        <span class="entry-left"><span class="entry-num">01</span><span class="entry-name">angelinaseverino.com</span></span>
+        <span class="entry-status"><span class="dot live"></span>Live</span>
+      </a></li>
+      <li><a href="https://posteress.com" target="_blank" rel="noopener">
+        <span class="entry-left"><span class="entry-num">02</span><span class="entry-name">posteress.com</span></span>
+        <span class="entry-status"><span class="dot live"></span>Live</span>
+      </a></li>
+      <li><a href="https://digitangels.com" target="_blank" rel="noopener">
+        <span class="entry-left"><span class="entry-num">03</span><span class="entry-name">digitangels.com</span></span>
+        <span class="entry-status"><span class="dot live"></span>Live</span>
+      </a></li>
+      <li><a href="https://alexdealma.com" target="_blank" rel="noopener">
+        <span class="entry-left"><span class="entry-num">04</span><span class="entry-name">alexdealma.com</span></span>
+        <span class="entry-status"><span class="dot live"></span>Live</span>
+      </a></li>
+      <li><a href="https://studiobetonika.com" target="_blank" rel="noopener">
+        <span class="entry-left"><span class="entry-num">05</span><span class="entry-name">studiobetonika.com</span></span>
+        <span class="entry-status"><span class="dot live"></span>Live</span>
+      </a></li>
+      <li><span class="soon">
+        <span class="entry-left"><span class="entry-num">06</span><span class="entry-name">gicleeclub.com</span></span>
+        <span class="entry-status"><span class="dot soon"></span>Coming soon</span>
+      </span></li>
+    </ul>
+
+    <footer>
+      <div class="row">
+        <span>12 Mulberry Place, Pinnell Road, London, SE9 6AR</span>
+        <a href="mailto:hello@artbritannia.com">hello@artbritannia.com</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
