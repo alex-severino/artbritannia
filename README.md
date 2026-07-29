@@ -4,9 +4,10 @@ Single static page for artbritannia.com. No build step, no framework — plain H
 
 ## Structure
 - `index.html` — the page
-- `logo.jpg` — Britannia mark
-- `favicon.svg` — minimal black trident crown
+- `favicon_source.jpg` — source art for the mark
+- `favicon.svg` — trident crown traced from the source (transparent)
 - `favicon.ico`, `apple-touch-icon.png`, `icons/` — raster favicons (from `favicon.svg`)
+- `logo.jpg` — Britannia mark
 - `site.webmanifest`, `browserconfig.xml` — PWA / Windows tile metadata
 
 ## Local preview
