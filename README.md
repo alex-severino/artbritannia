@@ -1,23 +1,30 @@
 # Art Britannia Ltd — Website
 
-Single static page for artbritannia.com. No build step, no framework — plain HTML/CSS, deployable as-is on Vercel.
+Next.js App Router site for artbritannia.com. The page is the same single-screen design as before — no restyle, no extra UI.
 
 ## Structure
-- `index.html` — the page
-- `favicon_source.jpg` — source art for the mark
-- `favicon.svg` — trident crown traced from the source (transparent)
-- `favicon.ico`, `apple-touch-icon.png`, `icons/` — raster favicons (from `favicon.svg`)
-- `logo.jpg` — Britannia mark
-- `site.webmanifest`, `browserconfig.xml` — PWA / Windows tile metadata
+- `app/page.tsx` — the page (markup + letter-split / hover motion)
+- `app/globals.css` — original styles, unchanged
+- `app/layout.tsx` — metadata, fonts, Google Analytics
+- `public/` — favicons, manifest, source art (`favicon_source.jpg`, `logo.jpg`)
 
 ## Local preview
-Open `index.html` directly in a browser, or serve it:
 ```
-npx serve .
+npm install
+npm run dev
+```
+Then open [http://localhost:3000](http://localhost:3000).
+
+Production build:
+```
+npm run build
+npm start
 ```
 
 ## Deploy (Vercel)
-This repo needs no build command and no output directory override — Vercel will serve it as a static site.
+Vercel should detect Next.js automatically. Use the default build command (`next build`) and do not set an output-directory override.
+
+If an older static-site setting is still on the project (empty build command, no framework), clear it so the Next.js preset can run.
 
 - **Production** — deploys from `main`
 - **Staging** — deploys from `staging` (Vercel preview/branch deployment)
