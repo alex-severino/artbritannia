@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Art Britannia",
   description:
-    "Art Britannia Ltd — an art creation company. Registry of studios and ventures.",
+    "Art Britannia Ltd — an art creation company. The studio group behind independent ventures in design, brand, tech, gaming, visual art and music.",
   manifest: "/site.webmanifest",
   icons: {
     icon: [
