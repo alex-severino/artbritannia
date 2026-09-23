@@ -27,7 +27,6 @@ Vercel should detect Next.js automatically. Use the default build command (`next
 If an older static-site setting is still on the project (empty build command, no framework), clear it so the Next.js preset can run.
 
 - **Production** — deploys from `main`
-- **Staging** — deploys from `staging` (Vercel preview/branch deployment)
 
 ## Domain
 `artbritannia.com`, DNS managed on GoDaddy, pointed at Vercel.
