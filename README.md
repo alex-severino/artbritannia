@@ -1,11 +1,14 @@
 # Art Britannia Ltd — Website
 
-Next.js App Router site for artbritannia.com. A single scrolling page: a neoclassical hero (Britannia in a niche beneath a pediment), a short statement, the six studios by discipline, and enquiries.
+Next.js App Router site for artbritannia.com. The page is built around engraving: an engine-turned guilloché medallion with Britannia's trident at its centre, a seal for each of the six studios, and enquiries on a dark plate.
 
 ## Structure
-- `app/page.tsx` — the page (content, trident mark, discipline glyphs, scroll reveals)
-- `app/globals.css` — styles
-- `app/layout.tsx` — metadata, fonts, Google Analytics
+- `app/page.tsx` — the page content
+- `app/trident.tsx` — the trident mark (`compact` crops the shaft for icons)
+- `app/engraving.ts` — the guilloché geometry (braids, ribbons, petals, ripples)
+- `app/plates.tsx` — the medallion, studio seals, watermark and ribbon band; the line work is drawn in the browser so the HTML stays small
+- `app/globals.css` — paper and ink tokens, layout, motion and reduced-motion support
+- `app/layout.tsx` — metadata, fonts (Bodoni Moda, Jost), Google Analytics
 - `public/` — favicons, manifest, source art (`favicon_source.jpg`, `logo.jpg`)
 
 ## Local preview

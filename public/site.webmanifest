@@ -4,8 +4,8 @@
   "description": "An art creation company — the studio group behind independent ventures in design, sound, and visual art.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#ffffff",
+  "background_color": "#f4f0e7",
+  "theme_color": "#f4f0e7",
   "icons": [
     {
       "src": "/icons/android-chrome-192x192.png",
