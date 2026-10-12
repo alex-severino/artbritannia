@@ -1,10 +1,10 @@
 # Art Britannia Ltd — Website
 
-Next.js App Router site for artbritannia.com. The page is the same single-screen design as before — no restyle, no extra UI.
+Next.js App Router site for artbritannia.com. A single scrolling page: a neoclassical hero (Britannia in a niche beneath a pediment), a short statement, the six studios by discipline, and enquiries.
 
 ## Structure
-- `app/page.tsx` — the page (markup + letter-split / hover motion)
-- `app/globals.css` — original styles, unchanged
+- `app/page.tsx` — the page (content, trident mark, discipline glyphs, scroll reveals)
+- `app/globals.css` — styles
 - `app/layout.tsx` — metadata, fonts, Google Analytics
 - `public/` — favicons, manifest, source art (`favicon_source.jpg`, `logo.jpg`)
 
