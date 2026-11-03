@@ -25,11 +25,15 @@ npm start
 ```
 
 ## Deploy (Vercel)
-Vercel should detect Next.js automatically. Use the default build command (`next build`) and do not set an output-directory override.
+Production deploys from `main` to [www.artbritannia.com](https://www.artbritannia.com).
 
-If an older static-site setting is still on the project (empty build command, no framework), clear it so the Next.js preset can run.
+For code updates, commit changes on `main`, then run `npm run ship`. It pushes `main`, cancels pending automatic Git builds for that exact commit, and deploys through the cached Vercel CLI path. It checks the serving production domain and skips a rebuild when a verified release of that commit is already live. Other commits and CLI deployments are not cancelled. `npm run deploy` provides the same checks and direct deployment without pushing. Both require a clean working tree and an installed, authenticated Vercel CLI.
 
-- **Production** — deploys from `main`
+Use `npm run deploy -- --check` for a read-only release check. Run `npm run test:deploy` to verify duplicate cancellation safeguards.
+
+Automatic Git deployments remain enabled for bare pushes, with their slower repository clone; use `npm run ship` to avoid that path and duplicate jobs.
+
+Preserve original media quality and keep media in Git.
 
 ## Domain
-`artbritannia.com`, DNS managed on GoDaddy, pointed at Vercel.
+`artbritannia.com` / `www.artbritannia.com`, DNS managed on GoDaddy, pointed at Vercel.
