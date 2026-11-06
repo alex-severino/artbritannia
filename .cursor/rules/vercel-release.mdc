@@ -9,7 +9,7 @@ Apply these defaults when the user asks to push, ship, deploy, or optimise deplo
 
 - Production branch: `main`
 - Git remote: `origin` (`git@github.com:alex-severino/artbritannia.git`)
-- Vercel project: `artbritannia` (team `realbenficas-projects`)
+- Vercel project: `artbritannia` (team `alex-severino-projects`)
 - Serving domain: `https://www.artbritannia.com` (also `artbritannia.com`)
 - Fast release: `npm run ship` (push + cached direct deploy). Deploy without push: `npm run deploy`. Read-only check: `npm run deploy -- --check`. Safeguard tests: `npm run test:deploy`.
 - Require a clean working tree on `main`. Push the exact commit before deploying local project files. Cancel only pending Git-triggered production builds for that exact commit on `main`. Preserve preview builds, other commits, and CLI deployments.
