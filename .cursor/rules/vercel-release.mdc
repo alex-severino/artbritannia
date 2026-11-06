@@ -8,7 +8,7 @@ alwaysApply: true
 Apply these defaults when the user asks to push, ship, deploy, or optimise deployments. Ordinary editing is not permission to release; respect "commit only" or "do not deploy".
 
 - Production branch: `main`
-- Git remote: `origin` (`git@github.com:realbenfica/artbritannia.git`)
+- Git remote: `origin` (`git@github.com:alex-severino/artbritannia.git`)
 - Vercel project: `artbritannia` (team `realbenficas-projects`)
 - Serving domain: `https://www.artbritannia.com` (also `artbritannia.com`)
 - Fast release: `npm run ship` (push + cached direct deploy). Deploy without push: `npm run deploy`. Read-only check: `npm run deploy -- --check`. Safeguard tests: `npm run test:deploy`.
